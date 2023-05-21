@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ViewModelFragments</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="term_options">
+        <item>F19</item>
+        <item>W20</item>
+        <item>S20</item>
+        <item>F20</item>
+        <item>W21</item>
+        <item>S21</item>
+        <item>F21</item>
+        <item>W22</item>
+        <item>S22</item>
+        <item>F22</item>
+        <item>W23</item>
+    </string-array>
+</resources>

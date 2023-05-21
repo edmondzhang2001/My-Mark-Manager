@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".Fragment3"
+                                                   android:id="@+id/frameLayout">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Entry"
+                android:textSize="24sp"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true" />
+        <EditText
+                android:id="@+id/descriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:layout_below="@+id/titleTextView"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp" />
+        <EditText
+                android:id="@+id/markEditText"
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:hint="Mark"
+                android:inputType="number"
+                android:layout_below="@+id/descriptionEditText"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"/>
+
+        <Switch
+                android:text="WD'ed?"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content" android:id="@+id/wdSwitch" android:layout_weight="1"
+                android:layout_toEndOf="@+id/markEditText" android:layout_marginStart="24dp"
+                android:layout_marginBottom="-55dp" android:layout_alignBottom="@+id/descriptionEditText"/>
+        <Spinner
+                android:id="@+id/termEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Term"
+                android:layout_below="@+id/markEditText"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp" />
+
+        <Button
+                android:id="@+id/saveButton"
+                android:layout_width="199dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_below="@+id/termEditText"
+                android:layout_marginTop="17dp"/>
+        <Button
+                android:text="Cancel"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content" android:id="@+id/cancelButton" android:layout_marginEnd="-212dp"
+                android:layout_alignEnd="@+id/saveButton" android:layout_marginBottom="-65dp"
+                android:layout_alignBottom="@+id/termEditText"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
